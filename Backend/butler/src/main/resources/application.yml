@@ -9,7 +9,15 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
-
+# OAuth설정
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 250562478367-9iimm1vhqu3l8j4vcg9m6cqn4a35ahoe.apps.googleusercontent.com
+            client-secret: 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
+            scope: email,profile
 jpa:
   hibernate:
     ddl-auto: create
