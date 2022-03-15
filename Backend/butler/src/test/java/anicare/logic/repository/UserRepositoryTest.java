@@ -9,14 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 
-@SpringBootTest(classes = ButlerApplication.class)
+@SpringBootTest
 @Transactional
 class UserRepositoryTest {
 
     @Autowired
     UserRepository userRepository;
-
-
 
       //  @Rollback()
         @Test

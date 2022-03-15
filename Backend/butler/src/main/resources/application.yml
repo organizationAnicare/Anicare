@@ -18,6 +18,20 @@ spring:
             client-id: 250562478367-9iimm1vhqu3l8j4vcg9m6cqn4a35ahoe.apps.googleusercontent.com
             client-secret: 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
             scope: email,profile
+          kakao:
+            client-id: 56196510e898673874fcd0a1f053e35b
+            redirect-url: "http://localhost:8080/login/oauth2/code/kakao"
+            client-authentication-method: POST
+            authorization-grant-type: authorization_code
+            scope: profile_nickname, account_email
+            client-name: Kakao
+        #카카오, 네이버 등은 Spring security에서 자체지원이 안되기 때문에 provider를 직접 설정해주어야함.
+        provider:
+          kakao:
+            authorization_uri: https://kauth.kakao.com/oauth/authorize
+            token_uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user_name_attribute: id
 jpa:
   hibernate:
     ddl-auto: create
