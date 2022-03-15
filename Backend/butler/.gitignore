@@ -160,5 +160,5 @@ gradle-app.setting
 .classpath
 
 #yaml
-*.yml
+application.yml
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,gradle
