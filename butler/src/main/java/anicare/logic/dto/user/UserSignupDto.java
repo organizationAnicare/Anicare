@@ -1,5 +1,6 @@
 package anicare.logic.dto.user;
 
+import anicare.logic.dao.BaseEntity;
 import anicare.logic.dao.user.UserDao;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 
 @Getter @Setter
-public class UserSignupDto {
+public class UserSignupDto  {
 
     @NotBlank
     @Max(6)
