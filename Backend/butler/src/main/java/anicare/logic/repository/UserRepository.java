@@ -6,11 +6,12 @@ import org.springframework.stereotype.Repository;
 
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserDao, Long> {
 
-    boolean findByEmail(String email);
+    UserDao findByEmail(String email);
 
     List<UserDao> findAll();
 }
