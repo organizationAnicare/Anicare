@@ -10,6 +10,7 @@ import MyPage from "./pages/MyPage";
 import Write from "./pages/Write";
 import TopButton from "./components/TopButton";
 import WriteButton from "./components/WriteButton";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <TopButton />
         <WriteButton />
+        <Footer />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/Login" element={<Login />}></Route>

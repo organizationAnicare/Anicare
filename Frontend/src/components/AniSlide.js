@@ -38,16 +38,16 @@ export default function AniSlide() {
     <StyledSlider>
       <Slider {...settings}>
         <Slide>
-          <img src={first}></img>
+          <img src={first} alt="img"></img>
         </Slide>
         <Slide>
-          <img src={second}></img>
+          <img src={second} alt="img"></img>
         </Slide>
         <Slide>
-          <img src={third}></img>
+          <img src={third} alt="img"></img>
         </Slide>
         <Slide>
-          <img src={fourth}></img>
+          <img src={fourth} alt="img"></img>
         </Slide>
       </Slider>
     </StyledSlider>

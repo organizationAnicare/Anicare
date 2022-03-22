@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Wrap = styled.div`
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -56,9 +56,6 @@ const Title = styled.h1`
   color: white;
   margin: 10px 20px 20px 20px;
 `;
-const Detail = styled.p`
-  margin: 20px;
-`;
 
 export default function ThirdGreet() {
   return (
@@ -72,7 +69,7 @@ export default function ThirdGreet() {
         <div className="card" style={cardMargin}>
           <div className="card-body">
             <h4 className="card-title">일상기록</h4>
-            <img src={icon1} width="40px" height="40px" />
+            <img src={icon1} width="40px" height="40px" alt="img" />
             <p className="card-text">
               나의 반려동물과 함께한 행복한 일상을 기록해보고 다른 친구들의 일상
               또한 만나보세요.
@@ -85,7 +82,7 @@ export default function ThirdGreet() {
         <div className="card" style={cardMargin}>
           <div className="card-body">
             <h4 className="card-title">새 가족</h4>
-            <img src={icon2} width="40px" height="40px" />
+            <img src={icon2} width="40px" height="40px" alt="img" />
             <p className="card-text">
               새로운 가족을 만난 아이들의 이야기. 잘 지내고 있는지 소식을
               찾아보세요.
@@ -98,7 +95,7 @@ export default function ThirdGreet() {
         <div className="card" style={cardMargin}>
           <div className="card-body">
             <h4 className="card-title">공유</h4>
-            <img src={icon3} width="40px" height="40px" />
+            <img src={icon3} width="40px" height="40px" alt="img" />
             <p className="card-text">
               사료정보, 병원정보, 생활 정보 등 반려 생활에 필요한 정보를
               알아보세요.
